@@ -21,7 +21,7 @@ jobs: # list des jobs à effectuer
       - name: Build the tests #
         run: mvn test
       - name: envoyer un mail
-        uses: actions/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v3
         if: ${{ failure() }}
         with:
           # Required mail server address:
@@ -40,9 +40,10 @@ jobs: # list des jobs à effectuer
           from: Github # <user@example.com>
       - name : Envoyer un rapport d'erreur sur slack
         if: always()
-        uses: actions/notify-slack-action@v1
+        uses: ravsamhq/notify-slack-action@v1
         with:
           status: ${{ job.status }}
           notify_when: 'failure'
         env:
           SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+      - name: Vérifier le formatage du code
