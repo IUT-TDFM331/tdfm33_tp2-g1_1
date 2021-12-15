@@ -20,6 +20,24 @@ jobs: # list des jobs à effectuer
         run: mvn -B -DskipTests clean package # On lance la commande maven qui lance le build du code
       - name: Build the tests #
         run: mvn test
+      - name: envoyer un mail
+        uses: actions/action-send-mail@v3
+        if: ${{ failure() }}
+        with:
+          # Required mail server address:
+          server_address: smtp.gmail.com
+          # Required mail server port:
+          server_port: 465
+          # Optional (recommended): mail server username:
+          username: ${{secrets.iuts3.class}}
+          # Optional (recommended) mail server password:
+          password: ${{secrets.kvkekkddxgmibljv}}
+          # Required mail subject:
+          subject: code wrong
+          # Required recipients' addresses:
+          to: alexandre.coulet@etu.unice.fr
+          # Required sender full name (address can be skipped):
+          from: Github # <user@example.com>
       - name : Envoyer un rapport d'erreur sur slack
         if: always()
         uses: actions/notify-slack-action@v1
