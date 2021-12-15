@@ -16,7 +16,8 @@ Que remarquez-vous ?
 9
  - les tests échouent
 10
- -
+ - le commit + push passe malgré l'erreur
+
 ## Contributors 
 
 - Alexandre Coulet 
