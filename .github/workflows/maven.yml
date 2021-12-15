@@ -39,7 +39,7 @@ jobs: # list des jobs à effectuer
           # Required sender full name (address can be skipped):
           from: Github # <user@example.com>
       - name : Envoyer un rapport d'erreur sur slack
-        if: always()
+        if: ${{ failure() }}
         uses: actions/notify-slack-action@v1
         with:
           status: ${{ job.status }}
