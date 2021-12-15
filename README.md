@@ -20,7 +20,7 @@ Que remarquez-vous ?
  - le commit + push passe malgré l'erreur
 
 13.
- - 
+ - github, execute les test et envoie un message d'erreur via mail
 
 ### 4. Exercices
 
