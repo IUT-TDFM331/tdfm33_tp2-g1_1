@@ -10,6 +10,9 @@ Pourquoi les tests mettent autant de temps ?
 Qu'avez-vous remarqué ?
 - La méthode reverseSort est placée a l'exterieur de la classe SortAlgorithms, ce qui provoque une erreur.
 
+Que remarquez-vous ?
+- Les répertoires créés sont apparus.
+
 ## Contributors 
 
 - Alexandre Coulet 
