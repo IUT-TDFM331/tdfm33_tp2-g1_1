@@ -13,6 +13,10 @@ Qu'avez-vous remarqué ?
 Que remarquez-vous ?
 - Les répertoires créés sont apparus.
 
+9
+ - les tests échouent
+10
+ -
 ## Contributors 
 
 - Alexandre Coulet 
