@@ -13,10 +13,18 @@ Qu'avez-vous remarqué ?
 Que remarquez-vous ?
 - Les répertoires créés sont apparus.
 
-9
+9.
  - les tests échouent
-10
+
+10.
  - le commit + push passe malgré l'erreur
+
+13.
+ - github, execute les test et envoie un message d'erreur via mail
+
+### 4. Exercices
+
+
 
 ## Contributors 
 
